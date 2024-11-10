@@ -5,7 +5,7 @@ import LanguageSelector from "./LanguageSelector";
 import { CODE_SNIPPETS } from "../constants";
 import Output from "./Output";
 
-const CodeEditor = () => {
+const CodeEditor = ({ setEditor }) => {
   const editorRef = useRef();
   const [value, setValue] = useState("");
   const [language, setLanguage] = useState("javascript");
@@ -45,7 +45,7 @@ const CodeEditor = () => {
       </HStack>
     </Box>
     <div className="footer">
-      <span>@CodeCraft</span>
+      <button onClick={()=>setEditor(false)}>@CodeCraft</button>
     </div>
     </>
   );
