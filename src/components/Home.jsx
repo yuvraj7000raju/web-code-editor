@@ -1,6 +1,6 @@
 import "./home.css";
 
-const Home = ({ language, onSelect }) => {
+const Home = ({ setEditor }) => {
     return (
       <>
       <div className="main">
@@ -12,7 +12,7 @@ const Home = ({ language, onSelect }) => {
             <li>"All-in-One Code Editor: Type, Run, Succeed"</li>
             <li>"Run Code Instantly in Any Language"</li>
         </ul>
-        <button>
+        <button onClick={()=>setEditor(true)}>
             Start Coding
         </button>
       </div>
