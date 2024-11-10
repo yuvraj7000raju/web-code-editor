@@ -1,5 +1,5 @@
 
-.main {
+.main-con {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,23 +12,22 @@
     font-family: monospace;
     font-size: 3em;
     font-weight: bold;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(102, 220, 69); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid rgb(102, 220, 69); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
     animation: 
       typing 1.5s steps(9, end),
       blink-caret .5s step-end infinite;
   }
   
-  /* The typing effect */
+ 
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
-  
-  /* The typewriter cursor effect */
+ 
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 140, 0) }
@@ -38,27 +37,27 @@
 
 
 
-.main ul {
+.main-con ul {
     list-style-type: none;
     padding: 0;
     margin: 0 0 1em 0;
     margin-top: 30px;
 }
 
-.main li {
+.main-con li {
     font-size: 1.2em;
     color: #718096;
    
 }
 @media screen and (max-width: 600px) {
-    .main li {
+    .main-con li {
         font-size: 1em;
     }
     
 }
 
-.main button {
-    background-color: #4CAF50; /* Green */
+.main-con button {
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -68,7 +67,7 @@
     transition: background-color 0.3s;
 }
 
-.main button:hover {
+.main-con button:hover {
     background-color: #45a049;
 }
 

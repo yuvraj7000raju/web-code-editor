@@ -3,7 +3,7 @@ import "./home.css";
 const Home = ({ setEditor }) => {
     return (
       <>
-      <div className="main">
+      <div className="main-con">
       <div class="typewriter">
   <h1>CodeCraft</h1>
 </div>
