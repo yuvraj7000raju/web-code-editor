@@ -21,8 +21,9 @@ const CodeEditor = () => {
   };
 
   return (
+    <>
     <Box>
-      <HStack spacing={4}>
+      <HStack spacing={4} >
         <Box w="50%">
           <LanguageSelector language={language} onSelect={onSelect} />
           <Editor
@@ -43,6 +44,10 @@ const CodeEditor = () => {
         <Output editorRef={editorRef} language={language} />
       </HStack>
     </Box>
+    <div className="footer">
+      <span>@CodeCraft</span>
+    </div>
+    </>
   );
 };
 export default CodeEditor;
